@@ -1,0 +1,8 @@
+flask
+flask_bootstrap
+flask_caching
+flask_wtf
+ldap3
+wtforms
+requests
+paramiko

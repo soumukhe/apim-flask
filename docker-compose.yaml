@@ -1,0 +1,15 @@
+version: '3'
+services:
+  rad-frontend:
+    container_name: sm-radfrontend
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: []
+    ports:
+      - "4000:80"
+      - "443:443"
+    volumes:
+      - ./app:/app
+      - ./certs:/etc/nginx/certs

@@ -1,0 +1,7 @@
+Initially to build it  do the following:
+from the folder where Dockerfile is and docker-compose.yaml is:   do docker-compose build
+Then do:  docker-compose up -d
+Or, you can do it in 1 line by:   docker-compose --build up -d
+---
+You only need to do that one time, unless you are  making drastic changes
+for smaller changes, all you need to do is :   docker-compose restart rad-frontend   //  note that rad-frontend is not the name of the container.  It is the name of the service for this container as defined in docker-compose.yaml file
